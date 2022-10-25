@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600;700&display=swap');
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.nav-items{
+    display: flex;
+}
+nav img:nth-child(1){
+    width: 90px;
+}
+.nav-item{
+    margin-right: 30px;
+    font-size: 18px;
+}
+.nav-items .active-item{
+    color: #FE5E35;
+}
+.icon{
+    display: none;
+}
+/* Hero-section */
+.intro-section{
+    display: flex;
+}
+.left-section{
+    font-family: 'Poppins';
+}
+.left-section h3{
+    font-size: 30px;
+}
+.left-section h1{
+    font-size: 60px;
+    font-family: 'Fredoka one';
+    font-weight: 800;
+}
+.sub-headlines{
+    font-size: 20px;
+}
+.sub-headlines h5 img{
+    background-color: #FE5E35;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+    
+}
+.sub-headlines h5{
+    margin-left: 10px;
+}
+.left-section p{
+    font-size: 12px;
+    color: #808080ce;
+}
+button, .action-btn{
+    width: 100px;
+    height: 30px;
+    background-color: #FE5E35;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* right-section */
+
+.right-section .headphone-div{
+    display: flex;
+    margin-left:70px;
+}
+.right-section img:first-child{
+    position: absolute;
+    top: 350px;
+    margin-left: 65px;
+    width: 130px;
+    z-index: 3;
+}
+.headphone-div img:last-child{
+    width: 450px;
+    position: absolute;
+    margin-left: 60px;
+}
+.headphone-div .discount-content{
+    margin-top: 268px;
+    margin-left: 96px;
+    z-index: 4;
+    color: #fff;
+    font-family: 'Fredoka One';
+}
+.right-section button{
+    margin-top: 95px;
+    margin-left: 300px;
+}
+.right-section .dots{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 20vh;
+    margin-left: 280px;
+    margin-top: 30px;
+}
+.right-section .yellow-dot{
+    height: 25px;
+    width: 25px;
+    background-color: #d8d80e;
+    border-radius: 50%;
+}
+.right-section .tomato-dot{
+    height: 25px;
+    width: 25px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+.right-section .black-dot{
+   height: 25px;
+   width: 25px;
+   background-color: black;
+   border-radius: 50%;
+}
+
+@media screen and (max-width:640px){
+    nav .nav-items{
+        display: none;
+    }
+   nav img:nth-child(3){
+    display: none;
+   }
+   .icon{
+    display: block;
+    margin-right: 90px;
+    margin-top: 10px;
+   }
+   .icon i{
+    font-size: 20px;
+   }
+   .intro-section{
+    display: flex;
+    flex-direction: column;
+   }
+   .left-section h3{
+    font-size: 16px;
+   }
+   .left-section h1{
+    font-size: 35px;
+   }
+   .sub-headlines{
+    font-size: 16px;
+  }
+  .right-section img:first-child{
+    position: absolute;
+    top: 700px;
+    left: 20px;
+  }
+  .headphone-div img:last-child{
+    width: 350px;
+  }
+  .headphone-div .discount-content{
+    position: absolute;
+   top: 440px;
+   left: 20px;
+  }
+  .right-section button{
+   position: relative;
+   top: 270px;
+   right: 40px;
+  }
+  .right-section .dots{
+    position: relative;
+    top: 320px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:641px){
+    nav .nav-items{
+        position: relative;
+        left: 30px;
+        z-index: 2;
+    }
+    nav img:nth-child(3){
+        position: relative;
+        right: 60px;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-section img:first-child{
+        margin-top: 540px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:769px){
+    nav .nav-item{
+    margin-left: 10px;
+    }
+    .headphone-div img:last-child{
+        width: 350px;
+        position: absolute;
+        right: 70px;
+        top: 260px;
+    }
+    .right-section img:first-child{
+        position: relative;
+        top: 200px;
+        right: 140px;
+        width: 120px;
+    }
+    .headphone-div .discount-content{
+        position: relative;
+        right: 330px;
+        top: 60px;
+        width: 20px;
+    }
+    .right-section button{
+        position: relative;
+        top: 70px;
+        right: 180px;
+    }
+    .right-section .dots{
+        position: relative;
+        right: 180px;
+        top: 120px;
+    }
+}
+
